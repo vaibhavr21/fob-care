@@ -250,21 +250,13 @@ footer {
 
 .container {
     width: 90%;
-    /* increased from 60% for better visibility */
     margin: 0 auto;
-    /* Add this to center the container */
     display: flex;
-    /* Add this to enable flex layout */
     flex-direction: column;
-    /* Add this to stack sections vertically */
     align-items: center;
-    /* Add this to center content horizontally */
     padding: 2rem;
-    /* Add some padding for better spacing */
     position: relative;
-    /* Add this */
     z-index: 1;
-    /* Add this */
 }
 
 .section {
@@ -272,54 +264,55 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* changed from 140% */
     margin: 2rem 0;
-    /* Increased margin */
     background: white;
     padding: 3rem;
-    /* Increased padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
-    /* Add this */
     z-index: 2;
-    /* Add this */
     gap: 2rem;
-    /* added gap between letter and card */
 }
 
 .letters {
     display: block;
-    /* Changed from flex */
     font-size: 150px;
     font-weight: 900;
-    /* Increased from bold */
     color: var(--primary-color);
     min-width: 200px;
-    /* ensure minimum width */
     text-align: center;
     padding: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    /* Add this */
     z-index: 3;
-    /* Add this */
     user-select: none;
-    /* Prevent text selection */
     -webkit-text-stroke: 2px var(--primary-color);
-    /* Add outline */
 }
 
 .card {
     flex: 1;
     padding: 5rem;
-    margin-left: 1rem;
-    /* background: #fff; */
+    margin-left: 1rem;  
     border-radius: 10px;
     width: 40%;
     font-size: 20px;
     box-shadow: 0 4px 8px rgb(44 0 222);
     z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; 
+    }
+
+    .letters {
+        order: -1; 
+        margin-bottom: 1rem; 
+
+    .card {
+        width: 100%; 
+        padding: 2rem; 
+    }
 }
 
 .success-story {
