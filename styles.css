@@ -292,7 +292,7 @@ footer {
 .card {
     flex: 1;
     padding: 5rem;
-    margin-left: 1rem;  
+    margin-left: 1rem;
     border-radius: 10px;
     width: 40%;
     font-size: 20px;
@@ -302,336 +302,336 @@ footer {
 
 @media (max-width: 768px) {
     .section {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .letters {
-        order: -1; 
-        margin-bottom: 1rem; 
+        order: -1;
+        margin-bottom: 1rem;
 
-    .card {
-        width: 100%; 
-        padding: 2rem; 
-    }
-}
-
-.success-story {
-    min-height: 100vh;
-    background: #f8f9fa;
-    padding: 4rem 2rem;
-}
-
-.success-story h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.success-story h2:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: var(--primary-color);
-    border-radius: 2px;
-}
-
-.story-grid {
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 2rem;
-    height: 600px;
-}
-
-
-.story-grid .story-card {
-    width: 40%;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    background: rgb(227 174 129);
-    box-shadow: 0 10px 20px rgba(178, 25, 25, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.story-grid .story-card:hover {
-    transform: translateY(-10px);
-}
-
-.story-grid .story-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.story-grid .story-card:hover img {
-    transform: scale(1.05);
-}
-
-.story-grid .story-card-2 {
-    width: 60%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.story-grid .story-card-2 iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-@media (max-width: 768px) {
-    .story-grid {
-        flex-direction: row;
-        height: auto;
+        .card {
+            width: 100%;
+            padding: 2rem;
+        }
     }
 
-    .story-grid .story-card,
-    .story-grid .story-card-2 {
-        width: 100%;
-        height: 400px;
-    }
-}
-
-@media (max-width: 480px) {
     .success-story {
-        padding: 2rem 1rem;
+        min-height: 100vh;
+        background: #f8f9fa;
+        padding: 4rem 2rem;
     }
 
     .success-story h2 {
-        font-size: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 3rem;
+        position: relative;
     }
 
-    .story-grid .story-card,
-    .story-grid .story-card-2 {
-        height: 300px;
-    }
-}
-
-/* Comprehensive Responsive Design */
-@media (min-width: 1400px) {
-    .container {
-        width: 80%;
-        max-width: 1600px;
-    }
-
-    .hero {
-        height: 70vh;
-    }
-}
-
-@media (max-width: 1200px) {
-    .container {
-        width: 75%;
+    .success-story h2:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: var(--primary-color);
+        border-radius: 2px;
     }
 
-    .section {
-        width: 120%;
-        padding: 40px;
-    }
-
-    .letter {
-        font-size: 120px;
-    }
-
-    .quick-actions {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        width: 85%;
-    }
-
-    .section {
-        width: 100%;
+    .story-grid {
+        display: flex;
         flex-direction: column;
+        max-width: 1400px;
+        margin: 0 auto;
         gap: 2rem;
+        height: 600px;
     }
 
-    .letter {
-        font-size: 100px;
+
+    .story-grid .story-card {
+        width: 40%;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        background: rgb(227 174 129);
+        box-shadow: 0 10px 20px rgba(178, 25, 25, 0.1);
+        transition: transform 0.3s ease;
     }
 
-    .nav-img {
-        width: 40px;
-        height: 40px;
+    .story-grid .story-card:hover {
+        transform: translateY(-10px);
     }
 
-    .hero {
-        height: 50vh;
-    }
-}
-
-@media (max-width: 768px) {
-    /* ...existing mobile menu code... */
-
-    .container {
-        width: 95%;
-        padding: 1rem;
+    .story-grid .story-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
     }
 
-    .section {
-        padding: 2rem;
+    .story-grid .story-card:hover img {
+        transform: scale(1.05);
     }
 
-    .letter {
-        font-size: 120px;
-        margin-bottom: 1rem;
+    .story-grid .story-card-2 {
+        width: 60%;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
-    .card {
-        margin-left: 0;
-        margin-top: 1rem;
+    .story-grid .story-card-2 iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 
-    .quick-actions {
-        grid-template-columns: 1fr;
-        padding: 2rem 1rem;
+    @media (max-width: 768px) {
+        .story-grid {
+            flex-direction: row;
+            height: auto;
+        }
+
+        .story-grid .story-card,
+        .story-grid .story-card-2 {
+            width: 100%;
+            height: 400px;
+        }
     }
 
-    .action-card {
-        padding: 1.5rem;
+    @media (max-width: 480px) {
+        .success-story {
+            padding: 2rem 1rem;
+        }
+
+        .success-story h2 {
+            font-size: 2rem;
+        }
+
+        .story-grid .story-card,
+        .story-grid .story-card-2 {
+            height: 300px;
+        }
     }
 
-    .nav-brand {
-        font-size: 1.2rem;
+    /* Comprehensive Responsive Design */
+    @media (min-width: 1400px) {
+        .container {
+            width: 80%;
+            max-width: 1600px;
+        }
+
+        .hero {
+            height: 70vh;
+        }
     }
 
-    .section {
-        flex-direction: column;
-        padding: 1.5rem;
+    @media (max-width: 1200px) {
+        .container {
+            width: 75%;
+        }
+
+        .section {
+            width: 120%;
+            padding: 40px;
+        }
+
+        .letter {
+            font-size: 120px;
+        }
+
+        .quick-actions {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
-    .letter {
-        color: #2563eb;
-        font-size: 120px;
-        min-width: 150px;
-    }
-}
+    @media (max-width: 992px) {
+        .container {
+            width: 85%;
+        }
 
-@media (max-width: 480px) {
-    /* ...existing mobile code... */
+        .section {
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+        }
 
-    .section {
-        padding: 20px;
-    }
+        .letter {
+            font-size: 100px;
+        }
 
-    .letter {
-        font-size: 60px;
-    }
+        .nav-img {
+            width: 40px;
+            height: 40px;
+        }
 
-    .card {
-        padding: 15px;
-    }
-
-    .nav-img {
-        width: 30px;
-        height: 30px;
+        .hero {
+            height: 50vh;
+        }
     }
 
-    .btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+    @media (max-width: 768px) {
+        /* ...existing mobile menu code... */
+
+        .container {
+            width: 95%;
+            padding: 1rem;
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        .letter {
+            font-size: 120px;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+
+        .quick-actions {
+            grid-template-columns: 1fr;
+            padding: 2rem 1rem;
+        }
+
+        .action-card {
+            padding: 1.5rem;
+        }
+
+        .nav-brand {
+            font-size: 1.2rem;
+        }
+
+        .section {
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .letter {
+            color: #2563eb;
+            font-size: 120px;
+            min-width: 150px;
+        }
     }
 
-    .letter {
-        font-size: 100px;
-        min-width: 120px;
-    }
-}
+    @media (max-width: 480px) {
+        /* ...existing mobile code... */
 
-/* Fix for devices with notch */
-@supports (padding-top: env(safe-area-inset-top)) {
-    .navbar {
-        padding-top: calc(1rem + env(safe-area-inset-top));
-        padding-left: calc(1rem + env(safe-area-inset-left));
-        padding-right: calc(1rem + env(safe-area-inset-right));
-    }
-}
+        .section {
+            padding: 20px;
+        }
 
-/* Fix for ultra-wide screens */
-@media (min-aspect-ratio: 21/9) {
-    .hero {
-        max-height: 800px;
-    }
-}
+        .letter {
+            font-size: 60px;
+        }
 
-/* Fix for landscape mode on mobile */
-@media (max-height: 500px) and (orientation: landscape) {
-    .hero {
-        height: 100vh;
-    }
+        .card {
+            padding: 15px;
+        }
 
-    .nav-links.active {
-        max-height: 80vh;
-        overflow-y: auto;
+        .nav-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .letter {
+            font-size: 100px;
+            min-width: 120px;
+        }
     }
 
-    .section {
-        flex-direction: row;
+    /* Fix for devices with notch */
+    @supports (padding-top: env(safe-area-inset-top)) {
+        .navbar {
+            padding-top: calc(1rem + env(safe-area-inset-top));
+            padding-left: calc(1rem + env(safe-area-inset-left));
+            padding-right: calc(1rem + env(safe-area-inset-right));
+        }
     }
-}
 
-/* Add smooth scrolling for the whole page */
-html {
-    scroll-behavior: smooth;
-}
+    /* Fix for ultra-wide screens */
+    @media (min-aspect-ratio: 21/9) {
+        .hero {
+            max-height: 800px;
+        }
+    }
 
-/* Fix for reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
+    /* Fix for landscape mode on mobile */
+    @media (max-height: 500px) and (orientation: landscape) {
+        .hero {
+            height: 100vh;
+        }
+
+        .nav-links.active {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .section {
+            flex-direction: row;
+        }
+    }
+
+    /* Add smooth scrolling for the whole page */
     html {
-        scroll-behavior: auto;
+        scroll-behavior: smooth;
     }
 
-    * {
-        transition: none !important;
-        animation: none !important;
-    }
-}
+    /* Fix for reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
 
-
-
-/* Add this at the end of your styles.css file */
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        /* Adjust width */
-        padding: 1rem;
-        /* Add padding for spacing */
+        * {
+            transition: none !important;
+            animation: none !important;
+        }
     }
 
-    .section {
-        flex-direction: column;
-        /* Stack sections vertically */
-        align-items: center;
-        /* Center content horizontally */
-        padding: 1rem;
-        /* Adjust padding for better spacing */
-    }
 
-    .letters {
-        font-size: 100px;
-        /* Adjust font size */
-        margin-bottom: 1rem;
-        /* Add margin for spacing */
-    }
 
-    .card {
-        width: 100%;
-        /* Adjust width */
-        padding: 1rem;
-        /* Adjust padding */
+    /* Add this at the end of your styles.css file */
+
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+            /* Adjust width */
+            padding: 1rem;
+            /* Add padding for spacing */
+        }
+
+        .section {
+            flex-direction: column;
+            /* Stack sections vertically */
+            align-items: center;
+            /* Center content horizontally */
+            padding: 1rem;
+            /* Adjust padding for better spacing */
+        }
+
+        .letters {
+            font-size: 100px;
+            /* Adjust font size */
+            margin-bottom: 1rem;
+            /* Add margin for spacing */
+        }
+
+        .card {
+            width: 100%;
+            /* Adjust width */
+            padding: 1rem;
+            /* Adjust padding */
+        }
     }
-}
