@@ -6,8 +6,8 @@
     height: 100vh;
     background: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the loader horizontally */
+    align-items: center; /* Center the loader vertically */
     z-index: 99999;
 }
 
@@ -19,7 +19,8 @@
 
 .loader {
     display: flex;
-    gap: 2rem;
+    justify-content: center; /* Center the letters horizontally */
+    align-items: center; /* Center the letters vertically */
 }
 
 .loader .letter {
@@ -50,34 +51,29 @@
 }
 
 @keyframes bounce {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-30px);
     }
 }
 
-/* Add this at the end of your preloader.css file */
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .loader .letter {
-        /* font-size: 3rem; */
-        /* Adjust font size */
+        font-size: 4rem; /* Slightly smaller font for tablets and mobile */
     }
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .loader {
-        gap: 10px;
-    }
+@media (max-width: 480px) {
     .loader .letter {
-        font-size: 10px;
-        /* Adjust font size */
+        font-size: 3rem; /* Smaller font for small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .loader .letter {
+        font-size: 2.5rem; /* Even smaller font for very small screens */
     }
 }
