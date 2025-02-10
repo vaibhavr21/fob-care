@@ -23,7 +23,7 @@ body {
 .navbar {
     background-color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@ body {
     z-index: 1000;
 }
 
-.nav-img{
+.nav-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 1rem;
@@ -118,8 +118,13 @@ body {
     z-index: 2;
 }
 
-.prev { left: 1rem; }
-.next { right: 1rem; }
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
 
 /* Quick Actions */
 .quick-actions {
@@ -133,7 +138,7 @@ body {
     background: white;
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -179,7 +184,7 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
@@ -213,66 +218,98 @@ footer {
         right: 0;
         background-color: white;
         padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .hero {
-        height: 40vh;  /* Reduce height on mobile */
+        height: 40vh;
+        /* Reduce height on mobile */
     }
 
     .slide-btn {
-        padding: 0.5rem;  /* Smaller buttons on mobile */
+        padding: 0.5rem;
+        /* Smaller buttons on mobile */
         font-size: 1rem;
     }
 
-    .prev { left: 0.5rem; }
-    .next { right: 0.5rem; }
+    .prev {
+        left: 0.5rem;
+    }
+
+    .next {
+        right: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
     .hero {
-        height: 30vh;  /* Even smaller height for very small devices */
+        height: 30vh;
+        /* Even smaller height for very small devices */
     }
 }
 
 .container {
-    width: 90%;  /* increased from 60% for better visibility */
-    margin: 0 auto;  /* Add this to center the container */
-    display: flex;   /* Add this to enable flex layout */
-    flex-direction: column;  /* Add this to stack sections vertically */
-    align-items: center;    /* Add this to center content horizontally */
-    padding: 2rem;         /* Add some padding for better spacing */
-    position: relative; /* Add this */
-    z-index: 1; /* Add this */
+    width: 90%;
+    /* increased from 60% for better visibility */
+    margin: 0 auto;
+    /* Add this to center the container */
+    display: flex;
+    /* Add this to enable flex layout */
+    flex-direction: column;
+    /* Add this to stack sections vertically */
+    align-items: center;
+    /* Add this to center content horizontally */
+    padding: 2rem;
+    /* Add some padding for better spacing */
+    position: relative;
+    /* Add this */
+    z-index: 1;
+    /* Add this */
 }
+
 .section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;  /* changed from 140% */
-    margin: 2rem 0; /* Increased margin */
+    width: 100%;
+    /* changed from 140% */
+    margin: 2rem 0;
+    /* Increased margin */
     background: white;
-    padding: 3rem; /* Increased padding */
+    padding: 3rem;
+    /* Increased padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    position: relative; /* Add this */
-    z-index: 2; /* Add this */
-    gap: 2rem;  /* added gap between letter and card */
+    position: relative;
+    /* Add this */
+    z-index: 2;
+    /* Add this */
+    gap: 2rem;
+    /* added gap between letter and card */
 }
+
 .letters {
-    display: block; /* Changed from flex */
+    display: block;
+    /* Changed from flex */
     font-size: 150px;
-    font-weight: 900; /* Increased from bold */
+    font-weight: 900;
+    /* Increased from bold */
     color: var(--primary-color);
-    min-width: 200px;  /* ensure minimum width */
+    min-width: 200px;
+    /* ensure minimum width */
     text-align: center;
     padding: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Add this */
-    z-index: 3; /* Add this */
-    user-select: none; /* Prevent text selection */
-    -webkit-text-stroke: 2px var(--primary-color); /* Add outline */
+    position: relative;
+    /* Add this */
+    z-index: 3;
+    /* Add this */
+    user-select: none;
+    /* Prevent text selection */
+    -webkit-text-stroke: 2px var(--primary-color);
+    /* Add outline */
 }
+
 .card {
     flex: 1;
     padding: 5rem;
@@ -566,5 +603,41 @@ html {
     * {
         transition: none !important;
         animation: none !important;
+    }
+}
+
+
+
+/* Add this at the end of your styles.css file */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        /* Adjust width */
+        padding: 1rem;
+        /* Add padding for spacing */
+    }
+
+    .section {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: center;
+        /* Center content horizontally */
+        padding: 1rem;
+        /* Adjust padding for better spacing */
+    }
+
+    .letters {
+        font-size: 100px;
+        /* Adjust font size */
+        margin-bottom: 1rem;
+        /* Add margin for spacing */
+    }
+
+    .card {
+        width: 100%;
+        /* Adjust width */
+        padding: 1rem;
+        /* Adjust padding */
     }
 }
